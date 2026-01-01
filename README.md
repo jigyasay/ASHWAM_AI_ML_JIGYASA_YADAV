@@ -7,13 +7,6 @@ Large Language Models (LLMs) are **non-deterministic**: the same prompt can yiel
 
 This project designs and implements a **stability and safety evaluation framework** to systematically measure **run-to-run variance** in structured LLM outputs **without relying on ground-truth labels**.
 
-## Defining Stability
-
-Because textual outputs can vary while meaning remains the same, stability is defined at the **semantic object level**, not the raw text level.
-
-Two outputs are considered *stable* if they refer to the same underlying real-world concept, even when phrasing or buckets differ.
-
-
 The framework focuses on:
 
 * Deterministic alignment of semantic objects across runs
@@ -21,6 +14,14 @@ The framework focuses on:
 * Surfacing *safety-critical failures* such as polarity flips
 
 ---
+
+
+## Defining Stability
+
+Because textual outputs can vary while meaning remains the same, stability is defined at the **semantic object level**, not the raw text level.
+
+Two outputs are considered *stable* if they refer to the same underlying real-world concept, even when phrasing or buckets differ.
+
 
 ## Problem Statement
 
